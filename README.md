@@ -4,6 +4,7 @@ an initialized thread object represents an active thread of execution; such a th
 # Idea is achieving parallelism by dividing process in multiple thread.
 
 
+
 	Way to create threads in C++11
 	1. Function pointer
 	2. Functors
