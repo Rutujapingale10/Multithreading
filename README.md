@@ -90,6 +90,15 @@ std swap() algorithm exchanges the state of lhs and rhs effectively called lhs.s
 Mutex is mutual exclusion .
 it is used to avoid race condition explicitly
 it contains mutex types, lock types and specific function
+# race condition - is a condition where to or more processes happen to change same data at a time.
+if there is race condition we have to protect it and protected section is called race section or region.
+# Member function
+1) lock
+2) try_lock
+3) unlock
+4) constructor
+5) destructor
+
 
 
 
