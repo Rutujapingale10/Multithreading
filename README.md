@@ -63,7 +63,7 @@ std::thread t1(&A::fun1,&b,param)
 join() joining of a thread is done using join function of a thread class. It makes main thread and join thread intercommunicated. main thread terminates only after join thread terminates.
 main thread waits for child thread to complete execution 
 
-# detach() - 
+# detach()  
 detach function detaches the threaad from parent thread. It allow both parent thread and thread execute independantly. detach thread will terminate after main terminated.
 
 
