@@ -36,7 +36,7 @@ void fun(int x)
 std::thread t1(fun,3);
 
 # By Using Lambda Expression 
-it is similar like function pointer 
+it is similar like function pointer. syntax to create thread using lambda function and function pointer is same.
 
 # launching thread using Non static member function
 class A{
