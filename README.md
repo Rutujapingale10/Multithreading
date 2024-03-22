@@ -29,7 +29,11 @@ an initialized thread object represents an active thread of execution; such a th
 # By function pointer
 
 We can define collable function with the function pointer 
-once we define the function then we can create thread object and pass function name as parameter and remaining parameter after that by simply using , in paranthesisi.
+once we define the function then we can create thread object and pass function name as parameter and remaining parameter after that by simply using , in paranthesis.
+void fun(int x)
+{
+}
+std::thread t1(fun,3);
 
 # By Using Lambda Expression 
 it is similar like function pointer 
@@ -51,7 +55,18 @@ std::thread t1(&A::fun1,&b,param)
 // at last we have arguments
 }
 
-
+# Static Member Function
+we can also launch the thread using static member function
+class A{
+public:
+static void fun(int x)
+{
+}
+};
+int main()
+{
+std::thread t1(&A::fun,parameter);
+}
 
 
 
