@@ -69,6 +69,7 @@ std::thread t1(&A::fun,parameter);
 }
 
 
+# thread Operations - join(), detach() and swap
 
 
 
@@ -80,6 +81,16 @@ main thread waits for child thread to complete execution
 
 # detach()  
 detach function detaches the threaad from parent thread. It allow both parent thread and thread execute independantly. detach thread will terminate after main terminated.
+# swap()
+std swap() algorithm exchanges the state of lhs and rhs effectively called lhs.swap(rhs) it change thread id of thread.
+
+
+
+# Mutex 
+Mutex is mutual exclusion .
+it is used to avoid race condition explicitly
+it contains mutex types, lock types and specific function
+
 
 
 
