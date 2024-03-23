@@ -98,6 +98,19 @@ if there is race condition we have to protect it and protected section is called
 3) unlock
 4) constructor
 5) destructor
+# lock()
+lock is a member function of mutex 
+it lock/block the execution of calling function until unlock by another thread.
+
+mutex is a class and lock is member function of that
+when multiple go to execute same data that time we can use lock function with mutex object. it will block the execution of calling function until first thread execution is not done or 
+unlock().
+
+# unlock()
+unlock() is also memebr function of mutex class. it is used to release lock()
+
+# try_lock
+
 
 
 
