@@ -103,13 +103,15 @@ lock is a member function of mutex
 it lock/block the execution of calling function until unlock by another thread.
 
 mutex is a class and lock is member function of that
-when multiple go to execute same data that time we can use lock function with mutex object. it will block the execution of calling function until first thread execution is not done or 
+when multiple thread go to execute same data that time we can use lock function with mutex object. it will block the execution of calling function until first thread execution is not done or 
 unlock().
 
 # unlock()
 unlock() is also memebr function of mutex class. it is used to release lock()
 
 # try_lock
+if the mutex is lock by another thread then function fails and return false without blocking (the calling thread continues its execution )
+if mutex is not lock by any thread then it return true and execute further code. 
 
 
 
