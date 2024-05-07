@@ -113,7 +113,19 @@ unlock() is also memebr function of mutex class. it is used to release lock()
 if the mutex is lock by another thread then function fails and return false without blocking (the calling thread continues its execution )
 if mutex is not lock by any thread then it return true and execute further code. 
 
+#Generic lock management 
+- lock_guard
+- it lock the mutex the moment we created object of lock_guard.
+in lock guard no need to explicitly remove the lock.
+lock guard remove lock automatically when it goes out of scope.
 
+
+#recursive_mutex - 
+it gives ability to lock recursively.
+generally when we used mutex that time when we call mutex we have to unlock it. If we try to lock already lock thread it will produce deadlock()
+to prevent this recursive_mutex is a solution
+
+it is used in situation where function may need to acquire a lock on shared resources multiple times within the same thread such as recursive algoritm or nested algorithm. 
 
 
 
